@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KALKULATOR UKK CANGGIH</title>
+    <link rel="stylesheet" href="tampilan.css" />
+</head>
+    <body>
+        <h1>Kalkulator 2022</h1>
+       
+        <div class="Kalkulator">
+            <input type="text" id="display" class="display" disabled />
+
+            <div class="buttons">
+                    <button onclick="bilangan('1')">1</button>
+                    <button onclick="bilangan('2')">2</button>
+                    <button onclick="bilangan('3')">3</button>
+                    <button class="hapus" onclick="Hapus()">AC</button>
+                    <button onclick="bilangan('4')">4</button>
+                    <button onclick="bilangan('5')">5</button>
+                    <button onclick="bilangan('6')">6</button>
+                    <button class="backspace" onclick="back()">DEL</button>
+                    <button onclick="bilangan('7')">7</button>
+                    <button onclick="bilangan('8')">8</button>
+                    <button onclick="bilangan('9')">9</button>
+                    <button onclick="bilangan('.')">.</button>
+                    <button class="nol" onclick="bilangan('0')">0</button>
+                    <button class="noldua" onclick="bilangan('00')">00</button>
+                    <button class="noltiga" onclick="bilangan('000')">000</button>
+                    <button class="operasi" onclick="bilangan('+')">+</button>
+                    <button class="operasi" onclick="bilangan('/')">:</button>
+                    <button class="operasi" onclick="bilangan('*')">x</button>
+                    <button class="operasi" onclick="Persen()">%</button>
+                    <button class="operasi" onclick="bilangan('-')">-</button>
+                    <button class="hasil" onclick="Hasil()">=</button>
+        </div>
+        <script src="operasi.js"></script>
+    </body>
+</html>
